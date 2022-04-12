@@ -49,7 +49,7 @@ function fetchSimpsonsJSON() {
   axios.get(url)
     .then(function(response) {
 			console.log("response", response)
-      return response.data; // response.data instead of response.json() with fetch
+      return response.data;
     })
     .then(function(simpsons) {
       console.log("simpsons", simpsons);
